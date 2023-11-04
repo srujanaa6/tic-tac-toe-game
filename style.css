@@ -1,0 +1,112 @@
+.body
+{
+    margin: 0;
+  
+    background-color: #FFCEFE;
+}
+
+.boxtext
+{
+    color: #734a98;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.board
+{
+    display: grid;
+    grid-template-columns:repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    margin: auto;
+    text-align: center;
+    align-content: center;
+   border: 1px solid #D9ACF5;
+   width: fit-content;
+    
+}
+
+h1{
+    color: #674188;
+    font-weight: 600;
+    font-family: 'Finger Paint', cursive;
+  
+  padding-bottom: 12px;
+}
+.cell {
+
+    padding-top: 5px;
+	border: 2px solid #FFCEFE;
+	justify-content: center;
+    text-align: center;
+    font-size: 50px;
+	cursor: pointer;
+    background-color:#fcd1fc;
+
+
+    margin: 4px;
+    border-radius: 7px;
+}
+.entire
+{
+    background-color: #D9ACF5;
+ 
+    text-align: center;
+
+   padding: 100px;
+   align-content: center;
+   border-radius: 5px;
+}
+.reset
+{
+    align-items: center;
+    appearance: none;
+    background-color: #fcddfc;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D9ACF5 0 -3px 0 inset;
+    box-sizing: border-box;
+    color:#674188;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Finger Paint', cursive;
+    height: 42px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-top: 2px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.info
+{
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: 'Finger Paint', cursive;
+    color: #674188;
+}
+
+
+.reset:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.reset:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.reset:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
